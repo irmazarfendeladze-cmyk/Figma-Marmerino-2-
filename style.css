@@ -12,6 +12,7 @@ body {
 /* Top Bar */
 .top-bar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
@@ -21,7 +22,7 @@ body {
   left: 0;
   right: 0;
   z-index: 100;
-  color: rgb(22, 21, 21);
+  color: white;
   font-size: 13px;
   font-weight: 700;
 }
@@ -54,13 +55,14 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px 40px;
+  color: white;
 }
 
 .logo {
   font-family: "Cinzel", serif;
   font-size: 80px;
   font-weight: 700;
-  color: rgb(24, 23, 23);
+  color: white;
   letter-spacing: 0;
   line-height: 100%;
   margin-bottom: 20px;
@@ -70,10 +72,11 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .main-nav a {
-  color: rgb(30, 29, 29);
+  color: white;
   text-decoration: none;
   font-family: "Inter", sans-serif;
   font-size: 13px;
@@ -282,6 +285,7 @@ body {
   background-color: #ffeded;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 60px 120px;
@@ -314,7 +318,10 @@ p {
   gap: 20px;
   padding: 40px 20px;
 }
-
+.diamond- img {
+  width: 100%;
+  height: auto;
+}
 .love {
   background-color: #ffeded;
   padding: 20px 0;
@@ -355,7 +362,7 @@ p {
   display: flex;
   gap: 50px;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .content img {
   max-width: 100%;
@@ -372,17 +379,25 @@ p {
 .contentText input {
   width: 70%;
   background: white;
-  height: 42px;
+  height: 52px;
   padding: 10px;
   border: none;
 }
 .contentText button {
-  height: 52;
+  height: 52px;
   background-color: rgb(17, 16, 16);
   color: rgb(225, 213, 213);
   border: none;
+  padding: 20px 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
 footer {
   background-color: #9e5779;
   padding: 30px 120px;
@@ -395,9 +410,46 @@ footer {
 
 .flex {
   display: flex;
-  gap: 10%;
+  gap: 10px;
   flex-wrap: wrap;
-  align-items: start;
+  align-items: center;
+}
+.footerFlex {
+  align-items: flex-start;
+  gap: 120px;
+}
+
+.center {
+  justify-content: center;
+}
+
+.Ellipse {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.text3 {
+  text-align: center;
+  padding: 20px;
+}
+
+.text3 h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.text3 hr {
+  width: 100px;
+  margin: 15px auto;
+  border: 1px solid #9b6a7f;
+}
+
+.text3 p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .footer1 h5 {
@@ -425,7 +477,9 @@ footer {
   justify-content: space-between;
   background-color: #9e5779;
   margin-top: 0px;
+  color: #ffffff;
 }
+
 .footer2 p {
   font-family: Inter;
   font-weight: 400;
@@ -471,7 +525,6 @@ footer {
   font-weight: 400;
   font-style: Regular;
   font-size: 15px;
-  
   line-height: 100%;
   letter-spacing: 0%;
   text-align: left;
@@ -499,7 +552,7 @@ footer {
   margin: 20px 15%;
 }
 .textAbout hr {
-  width: 80%;
+  width: 100%;
   background: #9b6a7f;
   color: #9b6a7f;
   height: 1px;
@@ -510,7 +563,7 @@ footer {
 
 .productCard img {
   width: 100%;
-  height: auto;
+  height: 80%;
 }
 
 .product {
@@ -518,6 +571,7 @@ footer {
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .vector {
@@ -526,15 +580,870 @@ footer {
   height: 12px;
   opacity: 1;
 }
+.baner-img {
+  margin: 20px 80px;
+}
 .baner-img img {
   max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  padding: 10px;
+  align-items: center;
+}
+.baner1img {
+  width: 100%;
+}
+.baner2img,
+.baner3img {
+  width: 50%;
 }
 .flexAbout {
   display: flex;
   gap: 10px;
   max-width: 100%;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .flexAbout img {
-  max-width: 49%;
+  max-width: 50%;
+}
+.baner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.store {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffeded;
+}
+.store img {
+  margin-top: 10px;
+  padding: 10px;
+  align-items: center;
+  max-width: 100%;
+  opacity: 1;
+}
+.store button {
+  width: 312px;
+  height: 59px;
+  opacity: 1;
+  top: 6042.32px;
+  left: 943px;
+  gap: 10px;
+  border-width: 1px;
+  border-radius: 6px;
+  padding-top: 20px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #585235;
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+}
+
+.registration-main {
+  background: #9e577980;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 122px;
+}
+.registration-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.registration-card h2 {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 27px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #ffffff;
+}
+.reg-form {
+  margin: 0 auto;
+  max-width: 386px;
+}
+.reg-form input {
+  width: 100%;
+  height: 44px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  background-color: transparent;
+}
+.reg-form input::placeholder {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+.checkbox2 {
+  width: 16px !important;
+  height: 16px;
+}
+.terms {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.reg-form button {
+  width: 100%;
+  height: 44px;
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 11px;
+
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.card-foter p {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 11px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 50px;
+  max-width: 264px;
+}
+.social-login button {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 11px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #000000;
+  width: 183px;
+  height: 44px;
+  background: #ffffff;
+  border: none;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.divider p {
+  color: white;
+}
+
+.divider p::before {
+  content: "";
+  display: inline-block;
+  padding: 0px 10px;
+  background-color: white;
+  width: 110px;
+  height: 1px;
+  margin: 2px;
+}
+.divider p::after {
+  content: "";
+  display: inline-block;
+  padding: 0 10px;
+  background-color: white;
+  width: 110px;
+  height: 1px;
+  margin: 2px;
+}
+.contact-page {
+  background-image: url("contact.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+.contact-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(219, 112, 147, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+.contact-page > * {
+  position: relative;
+  z-index: 1;
+}
+.social-login {
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  padding-bottom: 20;
+}
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #666;
+}
+
+.firstP {
+  font-family: Inter;
+  font-weight: 700 !important;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.contentText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Rectangle {
+  background: #9e577980;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 100px;
+  color: white;
+  margin-bottom: 80px;
+  margin: 122px;
+  flex-wrap: wrap;
+}
+.help-section {
+  max-width: 164px;
+}
+.Rectangle p {
+  text-align: left;
+}
+.Rectangle p:first-child {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 13px;
+
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.contentText h3 {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 47px;
+
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+/* Large screens (1200px and below) */
+@media screen and (max-width: 1200px) {
+  .text {
+    padding: 40px 60px;
+  }
+
+  .sect3 {
+    padding: 40px 60px;
+  }
+
+  footer {
+    padding: 30px 60px;
+  }
+
+  .content {
+    padding: 40px 60px;
+  }
+
+  .list ul {
+    margin: 30px 60px;
+  }
+
+  .store {
+    padding: 20px 60px;
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.top-bar-about,
+.logoAbout,
+.main-nav-about {
+  color: #000;
+}
+.main-nav-about a {
+  color: #000;
+}
+/* Medium screens - Tablets (992px and below) */
+@media screen and (max-width: 992px) {
+  .top-bar {
+    padding: 10px 20px;
+    font-size: 11px;
+    background: #ffcbe1;
+  }
+
+  .header {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 60px;
+  }
+
+  .main-nav {
+    gap: 20px;
+  }
+
+  .main-nav a {
+    font-size: 12px;
+  }
+
+  .hero-content {
+    padding-left: 40px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .text {
+    padding: 30px 40px;
+  }
+
+  .img h3 {
+    font-size: 28px;
+  }
+
+  .sect3 {
+    padding: 30px 40px;
+  }
+
+  .content {
+    padding: 30px 40px;
+    gap: 30px;
+  }
+
+  .contentText h3 {
+    font-size: 22px;
+  }
+
+  footer {
+    padding: 30px 40px;
+  }
+
+  .footer2 {
+    padding: 15px 40px;
+  }
+
+  .love img {
+    height: 300px;
+  }
+
+  .loveText {
+    padding: 0 20px;
+  }
+}
+
+/* Small screens - Tablets portrait (768px and below) */
+@media screen and (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px 15px;
+    position: relative;
+  }
+
+  .top-bar-left,
+  .top-bar-right {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .header {
+    top: 80px;
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 45px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .main-nav {
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .main-nav a {
+    font-size: 11px;
+  }
+
+  .hero-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .discover-btn {
+    padding: 12px 30px;
+    font-size: 13px;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .text {
+    padding: 25px 20px;
+  }
+
+  .text h2 {
+    font-size: 24px;
+  }
+
+  .text p {
+    font-size: 14px;
+  }
+
+  .img h3 {
+    font-size: 22px;
+    left: 5%;
+    bottom: 15%;
+  }
+
+  .img button {
+    font-size: 13px;
+    padding: 8px 15px;
+    right: 5%;
+    bottom: 5%;
+  }
+
+  .sect3 {
+    padding: 25px 20px;
+    gap: 20px;
+  }
+
+  .text3 h2 {
+    font-size: 20px;
+  }
+
+  .text3 p {
+    font-size: 14px;
+  }
+
+  .watch-list h2,
+  .diamond-collection h2 {
+    font-size: 24px;
+  }
+
+  .watch-list,
+  .diamond-collection {
+    padding: 30px 15px;
+  }
+
+  .flex.center img {
+    max-width: 30%;
+  }
+
+  .love img {
+    height: 250px;
+  }
+
+  h2.love {
+    font-size: 22px;
+  }
+
+  p.love {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  .BtnLove {
+    padding: 15px 60px;
+  }
+
+  .diamond-collection h3 {
+    font-size: 20px !important;
+    padding: 10px 15px !important;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 25px 20px;
+    gap: 20px;
+  }
+
+  .content img {
+    width: 100%;
+  }
+
+  .contentText {
+    text-align: center;
+  }
+
+  .contentText h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .contentText .flex {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contentText input {
+    width: 100%;
+  }
+
+  .contentText button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  footer {
+    padding: 25px 20px;
+  }
+
+  .flex {
+    justify-content: center;
+  }
+
+  .footer1 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer1 p {
+    text-align: center;
+  }
+
+  .footer2 {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .list ul {
+    margin: 20px 15px;
+    padding: 20px 15px;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .textAbout {
+    margin: 20px 5%;
+  }
+
+  .productCard {
+    max-width: 45%;
+  }
+
+  .store img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .store button {
+    width: 200px;
+    padding: 15px 40px;
+  }
+}
+
+/* Extra small screens - Mobile (480px and below) */
+@media screen and (max-width: 550px) {
+  .top-bar {
+    font-size: 10px;
+    padding: 5px 10px;
+    background: #dab4b7;
+  }
+
+  .top-bar-left,
+  .top-bar-right {
+    gap: 5px;
+  }
+
+  .header {
+    top: 70px;
+  }
+  .baner2img,
+  .baner3img {
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 32px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .main-nav {
+    gap: 10px;
+  }
+
+  .main-nav a {
+    font-size: 9px;
+  }
+
+  .search-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .hero-carousel {
+    height: 80vh;
+    min-height: 500px;
+  }
+
+  .hero-slide {
+    height: 80vh;
+    min-height: 500px;
+  }
+
+  .hero-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .discover-btn {
+    padding: 10px 25px;
+    font-size: 12px;
+  }
+
+  .text {
+    padding: 20px 15px;
+  }
+
+  .text h2 {
+    font-size: 20px;
+  }
+  .Rectangle,
+  .registration-main {
+    margin: 0 !important;
+    margin-top: 90px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .text p {
+    font-size: 13px;
+  }
+  .social-login button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .img h3 {
+    font-size: 18px;
+    left: 3%;
+    bottom: 20%;
+  }
+
+  .img button {
+    font-size: 11px;
+    padding: 6px 12px;
+    right: 3%;
+    bottom: 3%;
+  }
+
+  .sect3 {
+    padding: 20px 15px;
+  }
+
+  .text3 h2 {
+    font-size: 18px;
+  }
+
+  .text3 p {
+    font-size: 12px;
+  }
+
+  .watch-list h2,
+  .diamond-collection h2 {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .flex.center img {
+    max-width: 45%;
+  }
+
+  .Ellipse {
+    gap: 5px;
+  }
+
+  .Ellipse img {
+    width: 8px;
+    height: 8px;
+  }
+
+  .love img {
+    height: 200px;
+  }
+
+  h2.love {
+    font-size: 18px;
+  }
+
+  p.love {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .BtnLove {
+    padding: 12px 40px;
+    font-size: 12px;
+  }
+
+  .diamond-collection h3 {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+  }
+
+  .contentText h3 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .footer1 p {
+    font-size: 12px;
+  }
+
+  .footer2 {
+    font-size: 10px;
+  }
+
+  .icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .list ul {
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    align-items: center;
+  }
+
+  .list ul li {
+    font-size: 12px;
+  }
+
+  .aboutTitle {
+    font-size: 30px;
+  }
+
+  .aboutA {
+    font-size: 13px;
+  }
+
+  .productCard {
+    max-width: 100%;
+  }
+
+  .flexAbout {
+    flex-direction: column;
+  }
+
+  .flexAbout img {
+    max-width: 100%;
+  }
+
+  .store button {
+    width: 150px;
+    padding: 12px 30px;
+    font-size: 12px;
+  }
+}
+
+/* Very small screens (320px and below) */
+@media screen and (max-width: 320px) {
+  .logo {
+    font-size: 26px;
+  }
+
+  .main-nav a {
+    font-size: 8px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .text h2 {
+    font-size: 18px;
+  }
+
+  .img h3 {
+    font-size: 14px;
+  }
 }
