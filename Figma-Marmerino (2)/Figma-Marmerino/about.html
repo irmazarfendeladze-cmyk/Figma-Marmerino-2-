@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARMENIO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+ <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <span class="globe-icon">🌐</span>
+        <span>Other Countries / Regions / en</span>
+        <span class="location-icon">📍</span>
+        <span>Stores</span>
+      </div>
+      <div class="top-bar-right">
+        <span class="user-icon">👤</span>
+        <span>Login</span>
+        <span class="divider">|</span>
+        <span>Register</span>
+        <span>My Wishlist</span>
+        <span class="heart-icon">♡</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <h1 class="logo">MARMENIO</h1>
+      <nav class="main-nav">
+        <a href="about.html">New In</a>
+        <a href="about.html">Jewarly</a>
+        <a href="about.html">Watches</a>
+        <a href="about.html">Decorations</a>
+        <a href="#">Accessories</a>
+        <a href="#">Gifts</a>
+        <button class="search-btn">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            color="black"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
+        <button style="border: none; background-color: transparent; align-self: center;" class="cart">
+          <img style="width: 20px; height: 20px; " src="cart.png" alt="">
+        </button>
+      </nav>
+    </header>
+
+    <!-- Hero Section - Bootstrap Carousel -->
+    <div
+      id="heroCarousel"
+      class="carousel slide hero-carousel"
+      data-bs-ride="carousel"
+    >
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="hero-slide">
+            <img src="Rectangle 6.png" alt="Slide 1" class="hero-image" />
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <a class="aboutA" href="index.html">Home | jewellery</a>
+              <h2 class="hero-title aboutTitle">Marmenio Candy Collection</h2>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <!-- <div class="carousel-item">
+          <div class="hero-slide">
+            <img
+              src="istockphoto-1178099625-612x612.jpg"
+              alt="Slide 2"
+              class="hero-image"
+            />
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <h2 class="hero-title">Elegant<br />Collection</h2>
+              <a href="#" class="discover-btn">Discover more</a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Slide 3 -->
+       <!-- <div class="carousel-item">
+          <div class="hero-slide">
+            <img
+              src="display-of-elegant-pink-perfume-bottles-artistically-arranged-on-a-gentle-fabric-background-photo.jpg"
+              alt="Slide 3"
+              class="hero-image"
+            />
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <h2 class="hero-title">Timeless<br />Beauty</h2>
+              <a href="#" class="discover-btn">Discover more</a>
+            </div>
+          </div>
+        </div>  -->
+      </div>
+    
+    <section class="list">
+      <div class="list">
+        <ul>
+          <li>Shop By <img src="Frame (0).png" alt="" /></li>
+          <li>Categories <img src="Frame (0).png" alt="" /></li>
+          <li>Material <img src="Frame (0).png" alt="" /></li>
+          <li>Color <img src="Frame (0).png" alt="" /></li>
+          <li>Price Range <img src="Frame (0).png" alt="" /></li>
+        </ul>
+      </div>
+    </section>
+    <div class="textAbout">
+      <h1 class="logo">Marmenio Candy</h1>
+      <hr />
+      <p>
+        Marmenio presents a sweet series of one-of-a-kind cocktail rings.
+        Entitled Marmenio Candy, the collection features fancy-colored center
+        stones paired with a combination of diamonds and vibrant gems in
+        complementing shades
+      </p>
+    </div>
+    <div class="product">
+      <div class="productCard">
+      <img src="Group 748.png" alt="" />
+      <p>Marmenio Candy Pink Sapphire Ring with Rubies and Diamond</p>
+      <p>EXPLORE <img class="vector" src="Frame (v).png" alt="" /></p>
+      </div>
+      <div class="productCard">
+      <img src="Frame 749.png" alt="" />
+      <p>
+        Marmenio Candy Purplish Pink Spinel Ring with Sapphires, Tsavorite
+        Garnets and Diamonds
+      </p>
+      <p>EXPLORE <img class="vector" src="Frame (v).png" alt="" /></p>
+      </div>
+      <div class="productCard">
+      <img src="Frame 749 (1).png" alt="" />
+      <p>
+        Marmenio Candy Tsavorite Garnet Ring with Sapphires, Aquamarines and
+        Diamonds
+      </p>
+      <p>EXPLORE <img class="vector" src="Frame (v).png" alt="" /></p>
+      </div>
+      <div class="productCard">
+      <img style="background-color: #FEEDED" src="Rectangle 431.png" alt="" />
+      <p>Marmenio Candy Purple Spinel and Diamond Ring</p>
+      <p>EXPLORE <img class="vector" src="Frame (v).png" alt="" /></p>
+      </div>
+      <div class="productCard">
+      <img style="background-color: #FEEDED" src="Rectangle 432.png" alt="" />
+      <p>
+        Marmenio Candy Reddish Pink Spinel Ring with Tsavorite Garnets and
+        Purple Sapphires
+      </p>
+      <p>EXPLORE <img class="vector" src="Frame (v).png" alt="" /></p>s
+      </div>
+      <div class="productCard">
+      <img style="background-color: #FEEDED" src="Rectangle 433.png" alt="" />
+      <p>
+        Marmenio Candy Spessartite Garnet Ring with Peridots, Pink Sapphire and
+        Diamonds
+      </p>
+      <p>EXPLORE <img class="vector" src="Frame (v).png" alt="" /></p>
+      </div>
+    </div>
+    <section class="baner">
+      <div class="baner-img">
+        <img src="Rectangle 438.png" alt="" />
+        <div class="flexAbout">
+        <img src="Rectangle 439.png" alt="" />
+        <img src="Rectangle 440.png" alt="" />
+        </div>
+        <p style="margin: 50px;">
+          In a true collaboration of efforts, Marmenio's renowned team of
+          experts work hand-in-hand to create delectable rings that will satisfy
+          any jewelry connoisseur’s sweetest cravings.
+        </p>
+        <img src="Rectangle 441.png" alt="" />
+        <img src="Rectangle 442.png" alt="" />
+        <img src="Rectangle 443.png" alt="" />
+      </div>
+    </section>
+    <section class="store">
+      <img src="Rectangle 444.png" alt="" />
+      <div class="contentText">
+        <h3>Find My Marmenio</h3>
+        <p>
+          We look forward to welcoming you to the extraordinary world of
+          Marmenio where our legacy becomes your
+        </p>
+        <button>FIND A SALON</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="flex">
+        <div class="footer1">
+          <p>Marmenio</p>
+          <p>Products</p>
+          <p>Change Language: ENGLISH</p>
+          <p>Customer Service & FAQ</p>
+          <p>FAQ</p>
+          <p>Contact US</p>
+        </div>
+        <div class="footer1">
+          <p>About Us</p>
+          <p>About Us</p>
+          <p>Sustainability</p>
+          <p>Jobs & Career</p>
+          <p>Corporate Gifts</p>
+          <p>For Profesionals</p>
+          <p>Sitemap</p>
+          <p>Marmenio Create Jawellary</p>
+        </div>
+        <div class="footer1">
+          <p>Legal</p>
+          <p>Terms Of Use</p>
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+          <p>Cookie Consent</p>
+          <p>Imprint</p>
+          <p>REACH information</p>
+          <p>Follow Us</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
